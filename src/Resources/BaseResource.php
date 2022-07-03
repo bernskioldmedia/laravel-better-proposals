@@ -2,10 +2,7 @@
 
 namespace BernskioldMedia\BetterProposals\Resources;
 
-use BernskioldMedia\BetterProposals\ApiClient;
 use BernskioldMedia\BetterProposals\BetterProposalsClient;
-use BernskioldMedia\BetterProposals\Contracts\Resources\FiltersUpdatedSince;
-use BernskioldMedia\BetterProposals\Contracts\Resources\HasPagination;
 
 abstract class BaseResource
 {
