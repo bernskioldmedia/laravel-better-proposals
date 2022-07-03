@@ -1,0 +1,67 @@
+{
+    "name": "bernskioldmedia/laravel-better-proposals",
+    "description": "This is an API wrapper class for the Better Proposals API.",
+    "keywords": [
+        "bernskioldmedia",
+        "laravel",
+        "laravel-better-proposals"
+    ],
+    "homepage": "https://github.com/bernskioldmedia/laravel-better-proposals",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bernskiold Media",
+            "email": "hello@bernskioldmedia.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/contracts": "^9.0",
+        "spatie/laravel-package-tools": "^1.9.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "BernskioldMedia\\BetterProposals\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BernskioldMedia\\BetterProposals\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BernskioldMedia\\BetterProposals\\BetterProposalsServiceProvider"
+            ],
+            "aliases": {
+                "BetterProposals": "BernskioldMedia\\BetterProposals\\Facades\\BetterProposals"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
